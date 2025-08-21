@@ -116,28 +116,20 @@ const CONFIG = {
     color_2: '#ffffff'
   },
   {
-    title_1: 'clion',
+    title_1: 'clion', // 新增 clion 作为 title_1
     img_1: '/images/heo/clion.webp',
-    color_1: '#616161', // 示例颜色，可自定义
+    color_1: '#8e44ad', 
     title_2: 'Photoshop',
     img_2: '/images/heo/2023e4058a91608ea41751c4f102b131f267075902.webp',
     color_2: '#4082c3'
   },
   {
-    title_1: 'GUIGuider',
+    title_1: 'GUIGuider', // 新增 GUIGuider 作为 title_1
     img_1: '/images/heo/GUIGuider.webp',
-    color_1: '#795548', // 示例颜色，可自定义
+    color_1: '#27ae60', 
     title_2: 'Python',
     img_2: '/images/heo/20235c0731cd4c0c95fc136a8db961fdf963071502.webp',
     color_2: '#ffffff'
-  },
-  {
-    title_1: 'Typora',
-    img_1: '/images/heo/Typora.webp',
-    color_1: '#4b4b4b', // 示例颜色，可自定义
-    title_2: 'MobaXterm',
-    img_2: '/images/heo/MobaXterm.webp',
-    color_2: '#000000' // 示例颜色，可自定义
   },
   {
     title_1: 'Swift',
@@ -148,7 +140,9 @@ const CONFIG = {
     color_2: '#8f55ba'
   },
   {
-    title_1: '', 
+    title_1: 'Typora', // 新增 Typora 作为 title_1
+    img_1: '/images/heo/Typora.webp',
+    color_1: '#f39c12', 
     title_2: 'HTML',
     img_2: '/images/heo/202372b4d760fd8a497d442140c295655426070302.webp',
     color_2: '#e9572b'
@@ -159,6 +153,14 @@ const CONFIG = {
     color_1: '#df5b40',
     title_2: 'favicon',
     img_2: '/images/heo/favicon.webp',
+    color_2: '#1f1f1f'
+  },
+  {
+    title_1: 'MobaXterm',
+    img_1: '/images/heo/MobaXterm.webp',
+    color_1: '#34495e', 
+    title_2: 'jianying',
+    img_2: '/images/heo/jianying.webp',
     color_2: '#1f1f1f'
   }
 ],
