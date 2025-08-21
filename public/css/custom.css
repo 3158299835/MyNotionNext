@@ -12,70 +12,73 @@
 }
 
 
-/* 鼠标特效样式 */
+/* /public/css/custom.css */
+/* 自定义鼠标特效样式 */
 .cursor-dot {
-    width: 5px;
-    height: 5px;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
+  width: 5px;
+  height: 5px;
+  background-color: white;
 }
 
 .cursor-outline {
-    width: 30px;
-    height: 30px;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease;
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.cursor-dot, .cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
 }
 
 .particle {
-    position: fixed;
-    pointer-events: none;
-    z-index: 9998;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
 }
 
 .ripple {
-    position: fixed;
-    border-radius: 50%;
-    transform: scale(0);
-    animation: ripple 0.6s linear;
-    background-color: rgba(255, 255, 255, 0.3);
-    pointer-events: none;
-    z-index: 9997;
+  position: fixed;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+  background-color: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+  z-index: 9997;
 }
 
 .trail {
-    position: fixed;
-    background: radial-gradient(circle, rgba(108,92,231,0.6) 0%, rgba(108,92,231,0) 70%);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9996;
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9996;
 }
 
 @keyframes ripple {
-    to {
-        transform: scale(2.5);
-        opacity: 0;
-    }
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
 }
 
-/* 暗色模式适配 */
-.dark .cursor-dot {
-    background-color: white;
+/* 移除默认鼠标指针 */
+body {
+  cursor: none;
 }
 
-.dark .cursor-outline {
-    border-color: rgba(255, 255, 255, 0.5);
+/* 适配移动设备 - 禁用特效 */
+@media (max-width: 600px) {
+  .cursor-dot, .cursor-outline, .particle, .ripple, .trail {
+    display: none !important;
+  }
+  
+  body {
+    cursor: default;
+  }
 }
