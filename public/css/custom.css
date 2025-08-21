@@ -6,8 +6,3 @@
 .fa-info:before {
     content: "\f05a";
 }
-
-[id^="theme-"] {
-  font-family: LXGW WenKai;
-}
-
