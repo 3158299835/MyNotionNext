@@ -53,12 +53,20 @@ const CONFIG = {
   HEO_INFO_CARD_URL1: '/about',
   HEO_INFO_CARD_ICON1: 'fas fa-user',
   HEO_INFO_CARD_URL2: 'https://qm.qq.com/q/WCvIPoFdMm',
-  HEO_INFO_CARD_ICON2: 'fab fa-comment',
+  HEO_INFO_CARD_ICON2: 'fas fa-comment',
   HEO_INFO_CARD_URL3: '/coffee',
   HEO_INFO_CARD_TEXT3: '赞助博主',
 
   // 用户技能图标
   HEO_GROUP_ICONS: [
+    {
+      title_1: 'keil',
+      img_1: '/images/heo/keil.webp',
+      color_1: '#989bf8',
+      title_2: 'ccs',
+      img_2: '/images/heo/ccs.webp',
+      color_2: '#ffffff'
+    },
     {
       title_1: 'AfterEffect',
       img_1: '/images/heo/20239df3f66615b532ce571eac6d14ff21cf072602.webp',
@@ -118,7 +126,7 @@ const CONFIG = {
   ],
 
   HEO_SOCIAL_CARD: true, // 是否显示右侧，点击加入社群按钮
-  HEO_SOCIAL_CARD_TITLE_1: '交流频道',
+  HEO_SOCIAL_CARD_TITLE_1: '与我联系',
   HEO_SOCIAL_CARD_TITLE_2: '加入我们的社群讨论分享',
   HEO_SOCIAL_CARD_TITLE_3: '点击加入社群',
   HEO_SOCIAL_CARD_URL: 'https://docs.tangly1024.com/article/how-to-question',
