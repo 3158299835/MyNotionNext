@@ -31,7 +31,17 @@ const Footer = () => {
         id='footer-bottom'
         className='w-full h-20 flex flex-col p-3 lg:flex-row justify-between px-6 items-center bg-[#f1f3f7] dark:bg-[#21232A] border-t dark:border-t-[#3D3D3F]'>
         <div id='footer-bottom-left' className='text-center lg:text-start'>
-          <PoweredBy />
+          {/* 已注释掉Powered by NotionNext部分 */}
+          {/* <PoweredBy /> */}
+          {/* 备案号（指向工信部备案查询页面） */}
+          <a 
+            href="https://beian.miit.gov.cn/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="mb-1 inline-block hover:underline"
+          >
+            皖ICP备2025103621号-1
+          </a>
           <div className='flex gap-x-1'>
             <CopyRightDate />
             <a
